@@ -1,0 +1,233 @@
+.my_nav_bar
+{
+    position:sticky;
+    top:0;
+    z-index:99999;
+    text-align: right;
+    
+}
+#imghome
+{
+    width: 700px;
+    height: 640px;
+}
+#title
+{
+   display: flex;
+}
+.imghome 
+{
+    float: right;
+}
+.page-header
+{
+    text-align: center;
+    font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+.texts 
+{
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+.texts1
+{
+    font-family: "Bellota", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+img
+{
+    height: 1000px;
+}
+.background
+{
+    background-color: #99d2e9;
+}
+.hed-page .hero-content {
+    background: url("logo-pdf.pdf");
+    background-size: 680px;
+    background-position: 100% 0%;
+    position: relative;
+    padding: calc(10% + 100px) 15px 200px 80px;
+    height: 100vh;
+    max-height: 850px;
+    min-height: 400px;
+  }
+
+  .hed-page .hero-content h1 {
+    font-size: 31px;
+    color: #706a67;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .hed-page .hero-content h1 span {
+    font-family: "Gotham Black";
+  }
+
+  .hed-page .hero-content h2 {
+    font-family: "Gotham Black";
+    color: #014555;
+    font-size: 65px;
+    line-height: 1;
+    letter-spacing: normal;
+    margin-bottom: 0.5rem;
+  }
+
+  @media(max-width:1920px) {
+    .hed-page .hero-content h2 {
+      max-width: 525px;
+    }
+  }
+
+
+  .hed-page .hero-content .btn {
+    font-family: "Gotham Black";
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #014555;
+    border-color: transparent;
+    border-radius: 7px;
+  }
+
+  .hed-page .hero-content .btn:hover {
+    background-color: #f5d938;
+    color: #000;
+  }
+  .get-started-box {
+    background-color: #e0f2ff; /* light blue */
+    border: 2px solid #90cdf4; /* medium blue border */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .get-started-button {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .get-started-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .hero-content {
+    background-color: rgb(153, 210, 233); /* Keep your light blue */
+    padding: 80px 20px;
+    padding-top: 100px;
+    min-height: 400px;
+  }
+  
+  .hero-h2 {
+    font-size: 75px;
+    color: #1e3a5f;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 150px;
+  }
+  
+  .hero-logo {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+ul li ul.dropdown li
+{
+    display: block;
+}
+ul li ul.dropdown 
+{
+    width: 150%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown
+{
+    display: block;
+}
+
+
+.announcement {
+    position: absolute;
+    right: 20px;
+    top: 100%;
+    background-color: #ffd700;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 10px 10px 15px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: floatIn 1.2s ease-in-out forwards;
+    z-index: 9999;
+  }
+  
+  .announcement a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sparkle {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, red 30%, transparent 70%);
+    border-radius: 50%;
+    animation: fireworks 0.8s infinite ease-in-out alternate;
+  }
+  
+  @keyframes fireworks {
+    0% {
+      transform: translate(-50%, 0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -25px) scale(1.6);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes floatIn {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+
+
+
+
+
+
+ 
