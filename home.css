@@ -297,4 +297,17 @@ ul li:hover ul.dropdown
 
 
 
- 
+.contact-form-box {
+  padding: 30px;
+}
+
+.contact-info-box {
+  background-color: #99d2e9;
+  color: #fff;
+  padding: 30px;
+}
+
+.contact-info-box a {
+  color: #fff;
+  text-decoration: underline;
+}
