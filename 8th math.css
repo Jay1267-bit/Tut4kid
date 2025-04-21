@@ -36,4 +36,28 @@
     margin-bottom: 15px;
   }
   
- 
+  .home-link {
+    font-family: 'Trirong', serif; /* or match your font choice */
+    font-size: 30px;
+    font-weight: bold;
+    color: #1f2bd6; /* Blue like your image */
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.home-link:hover {
+    color: #2a75bb; /* Slightly lighter blue on hover */
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .home-link {
+      font-size: 18px;
+      top: 12px;
+      left: 10px;
+  }
+}
+
