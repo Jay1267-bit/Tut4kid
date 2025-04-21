@@ -221,6 +221,64 @@ ul li:hover ul.dropdown
       opacity: 1;
     }
   }
+
+  /* Make dropdown container full-width and nice */
+.navbar-nav .dropdown-submenu {
+  position: relative;
+}
+
+.two-column-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  top: 100%;
+  left: 0;
+  width: 500px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  z-index: 1000;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.dropdown-submenu:hover .two-column-dropdown {
+  display: flex;
+}
+
+/* Each column */
+.dropdown-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+/* Blue Title */
+.dropdown-title {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Course links */
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-column ul li a {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.dropdown-column ul li a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
   
   
   
