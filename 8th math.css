@@ -53,3 +53,9 @@
     opacity: 1;
     max-height: 150px;
   }
+  
+  .animated-card:hover,
+.animated-card.active {
+  transform: scale(1.05);
+  height: 350px;
+}
