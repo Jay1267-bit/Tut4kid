@@ -36,20 +36,4 @@
     margin-bottom: 15px;
   }
   
-  .info-card .hidden-text {
-    opacity: 0;
-    max-height: 0;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .info-card:hover {
-    height: 360px;
-  }
-  
-  .info-card:hover .hidden-text {
-    opacity: 1;
-    max-height: 150px;
-  }
+ 
