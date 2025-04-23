@@ -40,12 +40,20 @@
     text-decoration: underline;
   }
   
-  .contact-form .form-control {
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* space between fields */
+    max-width: 600px;
+    margin: auto;
+  }
+  .form-control {
     width: 100%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 6px;
+    box-sizing: border-box;
   }
   
   .send-btn {
@@ -86,4 +94,65 @@
       top: 12px;
       left: 10px;
   }
+}
+
+
+.team-contact-section {
+  background: linear-gradient(to right, #55e6c1, #4dd0e1);
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+}
+
+.team-contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1f2bd6;
+}
+
+.team-contact-subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.team-contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  padding: 100px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.member-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2bd6;
+  margin-bottom: 5px;
+}
+
+.member-role {
+  color: #555;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.member-phone {
+  font-weight: 600;
+  color: #000;
 }

@@ -1,67 +1,82 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="contact.css">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("FQJFu3rO0ypAcPf3L");
-  })();
-</script>
-<script src="contact.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("FQJFu3rO0ypAcPf3L");
+    })();
+  </script>
 </head>
 <body>
-    <a class="navbar-brand home-link" href="index.html">Tut4kid</a>
+  <a class="navbar-brand home-link" href="index.html">Tut4kid</a>
 
-    
-    
-    <section id="Contact us" class="contact-section">
+  <section class="contact-section">
     <div class="container">
       <h2 class="contact-title">Connect With Us</h2>
-      <p class="contact-subtitle">We would love to respond to your queries and help you succeed. Feel free to get in touch with us.</p>
-  
-      <div class="row contact-box">
-        <!-- Left side: Contact form -->
-        <div class="col-md-8 contact-form-box">
+      <p class="contact-subtitle">
+        We would love to respond to your queries and help you succeed. Feel free to get in touch with us.
+      </p>
+
+      <div class="contact-box">
+        <div class="contact-form-box">
           <h4 class="form-heading">Send your request</h4>
-          <form class="contact-form">
-            <div class="row">
-              <div class="col-md-6">
-                <input type="text" placeholder="Name" class="form-control" />
-              </div>
-              <div class="col-md-6">
-                <input type="text" placeholder="Phone" class="form-control" />
-              </div>
-              <div class="col-md-6">
-                <input type="email" placeholder="Email" class="form-control" />
-              </div>
-              <div class="col-md-6">
-                <input type="text" placeholder="Subject" class="form-control" />
-              </div>
-              <div class="col-12">
-                <textarea rows="4" placeholder="Your Message" class="form-control"></textarea>
-              </div>
-              <div class="col-12 text-start">
-                <button type="submit" class="send-btn">SEND</button>
-              </div>
-            </div>
+          <form id="contact-form">
+            <input type="text" name="user_name" placeholder="Name" class="form-control" required />
+            <input type="text" name="user_phone" placeholder="Phone" class="form-control" required />
+            <input type="email" name="user_email" placeholder="Email" class="form-control" required />
+            <input type="text" name="subject" placeholder="Subject" class="form-control" required />
+            <textarea name="message" rows="4" placeholder="Your Message" class="form-control" required></textarea>
+            <button type="submit" class="send-btn">SEND</button>
           </form>
-        </div>
-  
-        <div class="col-md-4 contact-info-box">
-          <h5 class="info-title">Reach Us</h5>
-          <p><strong>Email</strong><br><a href="mailto:contact@tut4kid.org">Tut4kid@gmail.com</a></p>
-          <p><strong>President's Phone Number:</strong><br>980-307-5635</p>
-          <p><strong>Vice President's Phone Number:</strong><br>704-920-9365</p>
-          <p><strong>Instagram</strong><br>tut4kid</p>
         </div>
       </div>
     </div>
   </section>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
 
+        emailjs.sendForm("service_77eth8j", "template_yvbhh2b", this)
+          .then(function () {
+            alert("Message sent!");
+          }, function (error) {
+            alert("Failed to send message: " + error.text);
+          });
+      });
+    });
+  </script>
 
-  </body>
-
-
+  
+  <section id="team-contacts" class="team-contact-section">
+    <div class="container">
+      <h2 class="team-contact-title">Contact Us</h2>
+      <p class="team-contact-subtitle">Reach out directly to our team members. <br> Instagram - <a href="https://www.instagram.com/tut4kid/" target="_blank">tut4kid</a> </p>
+  
+      <div class="team-contact-list">
+        <div class="team-member">
+          <h4 class="member-name">Jayanth Gelle</h4>
+          <p class="member-role">Founder/President</p>
+          <p class="member-phone">📞980-307-5635</p>
+        </div>
+        <div class="team-member">
+          <h4 class="member-name">Poorvi Parihar</h4>
+          <p class="member-role">Vice President</p>
+          <p class="member-phone">📞704-920-9365</p>
+        </div>
+        <div class="team-member">
+          <h4 class="member-name">TBD</h4>
+          <p class="member-role">Director Of Operations</p>
+          <p class="member-phone">📞 </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
 </html>
-
